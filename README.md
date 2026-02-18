@@ -1,6 +1,10 @@
-# Ballot-System
+# 🗳️  Self Auditing Ballot System – Secure Online Voting Platform
 
-**Ballot-System** is a secure, transparent, and user-friendly electronic voting platform designed to conduct fair and efficient elections. It ensures data integrity, voter anonymity, and real-time result tracking.
+## 📖 Overview
+The **Ballot System** is a secure web-based online voting application that enables authenticated users to cast votes digitally while ensuring **transparency, data integrity, and real-time result processing**.
+
+This project was developed as a **team-based academic project** to demonstrate practical knowledge of **web development, database management, and secure authentication mechanisms**.
+---
 
 ## 🚀 Key Features
 
