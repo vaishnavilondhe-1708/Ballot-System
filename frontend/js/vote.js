@@ -81,9 +81,11 @@ async function loadBallot() {
 function selectCandidate(candidateId, element) {
     // Deselect all
     document.querySelectorAll('.candidate-option').forEach(el => el.classList.remove('selected'));
+
     // Select clicked
     element.classList.add('selected');
     selectedCandidateId = candidateId;
+
     // Enable submit
     const btn = document.getElementById('submit-vote-btn');
     if (btn) btn.disabled = false;
@@ -167,7 +169,10 @@ async function loadResults() {
         const maxVotes = Math.max(...results.results.map(r => r.vote_count), 1);
 
         container.innerHTML = results.results.map((r, i) => {
-            const percentage = results.total_votes > 0 ? ((r.vote_count / results.total_votes) * 100).toFixed(1) : 0;
+            const percentage = results.total_votes > 0
+                ? ((r.vote_count / results.total_votes) * 100).toFixed(1)
+                : 0;
+
             const isWinner = i === 0 && r.vote_count > 0;
 
             return `
